@@ -2004,10 +2004,10 @@ const periodePdf = bulanSingkat[monthSelect.value] || "";
 
     doc.setFont("helvetica","normal");
     doc.setFontSize(9);
-    doc.text("Human Resource and General Affair Division", leftMargin, y);
+    doc.text("Human Resource and General Affairs Division", leftMargin, y);
 
     y += 4;
-    doc.text("General Affair Departement", leftMargin, y);
+    doc.text("General Affairs Departement", leftMargin, y);
 
     /* ================= TITLE ================= */
 
@@ -2017,7 +2017,7 @@ const periodePdf = bulanSingkat[monthSelect.value] || "";
     doc.setFontSize(13);
 
     doc.text(
-        "DETAILED TOLL AND PARKING EXPENSE REPORT",
+        "DETAILED HIGHWAY AND PARKING EXPENSE REPORT",
         PAGE_WIDTH/2,
         y,
         {align:"center"}
@@ -2172,7 +2172,7 @@ const tableRight = startX + tableWidth;
 
     let x = startX;
 
-    doc.setFont("helvetica","normal");
+    doc.setFont("helvetica","bold");
     doc.setFontSize(9);
 
     headers.forEach((h,i)=>{
@@ -2645,10 +2645,10 @@ const periodePdf = bulanSingkat[monthSelect.value] || "";
 
     doc.setFont("helvetica","normal");
     doc.setFontSize(8);
-    doc.text("Human Resource and General Affair Division", leftMargin, y);
+    doc.text("Human Resource and General Affairs Division", leftMargin, y);
 
     y += 3;
-    doc.text("General Affair Departement", leftMargin, y);
+    doc.text("General Affairs Departement", leftMargin, y);
 
     /* ================= TITLE ================= */
 
@@ -2999,7 +2999,7 @@ doc.text(
 
 doc.setFont("helvetica","normal");
 doc.text(
-    "*Total Toll Parking Suspense Rp. 3.000.000",
+    "*Total Highway Parking Suspense Rp. 3.000.000",
     leftMargin,
     y + 20
 );
